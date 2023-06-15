@@ -1,5 +1,4 @@
-ARG BASE
-FROM ubuntu:$BASE
+FROM ubuntu:22.04
 
 USER root
 
