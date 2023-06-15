@@ -1,0 +1,13 @@
+version: '2.4'
+volumes:
+    base-ssh: null
+
+services:
+  base-ssh:
+    image: "rpaff/base-ssh-${BASE}:latest"
+    container_name: "base-ssh-${BASE}"
+    build: .
+    volumes:
+      - base-ssh:/home/rcpaffenroth
+    ports:
+      - "${PORT}:2022"
