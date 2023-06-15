@@ -63,4 +63,4 @@ ENTRYPOINT ["tini", "-g", "--"]
 # My command for starting sshd as root
 # there is also /usr/local/bin/start_ssh_user.sh
 # for starting sshd as the user.
-CMD ["/usr/local/bin/start_ssh.sh"]
+CMD ["/usr/local/bin/start_ssh_user.sh"]
